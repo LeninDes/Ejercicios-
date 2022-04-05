@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std; 
+
+int numero;
+
+void pedirDato(){
+	cout<<"Ingrese un Numero: ";
+	cin>>numero;
+}
+
+void fibo(int numero){
+	int aux1=0, aux2=1, aux3=1;
+	for(int i=1; i<numero; i++){
+		aux3 = aux1 + aux2;
+		cout<<aux3<<" ";
+		aux1 = aux2;
+		aux2 = aux3;  
+	}
+}
+
+int main() {
+	
+	pedirDato();
+	cout<<"1 ";
+	fibo( numero );
+	
+	return 0;
+}
